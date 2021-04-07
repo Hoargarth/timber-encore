@@ -1,0 +1,11 @@
+## Team
+
+Your name or company
+http://yoursite.org
+@you_on_twitter
+
+
+## Site
+
+Software: Built with [Timber-Encore](https://github.com/Hoargarth/timber-encore) by Alex Berger (Hoargarth)
+Based on [Timber](http://upstatement.com/timber) by Upstatement

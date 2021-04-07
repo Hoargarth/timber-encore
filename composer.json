@@ -1,0 +1,24 @@
+{
+  "name": "hoargarth/timber-encore",
+  "description": "Starter theme to build a Timber theme with Symfony Encore included",
+  "type":"wordpress-theme",
+  "minimum-stability" : "stable",
+  "authors": [
+    {
+      "email": "alexberger@freenet.de",
+      "name": "hoargarth"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+	  "timber/timber": "1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.7.16|6.*"
+  }
+}
