@@ -1,0 +1,27 @@
+{
+  "name": "repository",
+  "version": "1.0.0",
+  "description": "The \"_s\" for Timber: a dead-simple theme that you can build from, with included Symfony Encore.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "encore": "encore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoargarth/timber-encore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hoargarth/timber-encore/issues"
+  },
+  "homepage": "https://github.com/Hoargarth/timber-encore#readme",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^1.1.2",
+    "sass-loader": "^11.0.1",
+    "webpack-notifier": "^1.13.0"
+  }
+}
