@@ -21,12 +21,12 @@ You can configure Encore in `webpack.config.js` file
 
 #### Compiling assets using NPM:
 - compile once: `npm run encore dev`
-- recompile on file changes: `npm run ecore dev --watch`
+- recompile on file changes: `npm run encore dev --watch`
 - compile for production: `npm run encore production`
 
 #### Compiling assets using Yarn:
 - compile once: `yarn encore dev`
-- recompile on file changes: `yarn ecore dev --watch`
+- recompile on file changes: `yarn encore dev --watch`
 - compile for production: `yarn encore production`
 
 ## What's here?
