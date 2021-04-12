@@ -58,19 +58,18 @@ Encore
     // enables Sass/SCSS support
     .enableSassLoader()
 
+    .addLoader({
+      test: /\.js$/,
+      enforce: 'pre',
+      loader: 'eslint-loader',
+      exclude: /node_modules/,
+      options: {
+          fix: true
+        }
+    })
+
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
-
-    // uncomment to get integrity="..." attributes on your script & link tags
-    // requires WebpackEncoreBundle 1.4 or higher
-    //.enableIntegrityHashes(Encore.isProduction())
-
-    // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
-
-    // uncomment if you use API Platform Admin (composer require api-admin)
-    //.enableReactPreset()
-    //.addEntry('admin', './assets/admin.js')
 ;
 
 module.exports = Encore.getWebpackConfig();
