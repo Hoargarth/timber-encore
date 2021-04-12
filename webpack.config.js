@@ -11,23 +11,28 @@ Encore
     .setOutputPath('dist/')
 
     // public path used by the web server to access the output path
-    .setPublicPath('http://www.timber-encore.test')
+    .setPublicPath('/')
 
     // only needed for CDN's or sub-directory deploy
     .setManifestKeyPrefix('.')
 
-    /*
+  /*
      * ENTRY CONFIG
      *
      * Add 1 entry for each "page" of your app
-     * (including one that's included on every page - e.g. "app")
+     * (including one that's included on every page - e.g. "theme")
      *
-     * Each entry will result in one JavaScript file (e.g. app.js)
-     * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
+     * Each entry will result in one JavaScript file (e.g. theme.js)
+     * and one CSS file (e.g. theme.css) if your JavaScript imports CSS.
+     *
+     * If the name of the entry is the same as the class in <body> tag,
+     * the files will be automatically enqueued on those pages with this specific class.
+     * Uncomment the examples and create the according file to try it out.
      */
     .addEntry('theme', './assets/theme.js')
-    //.addEntry('page1', './assets/page1.js')
-    //.addEntry('page2', './assets/page2.js')
+    // .addEntry('home', './assets/home.js')
+    // .addEntry('page-template-default', './assets/page-template-default.js')
+    // .addEntry('page-id-1', './assets/page-sample-page.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

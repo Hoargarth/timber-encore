@@ -65,7 +65,12 @@ include('lib/StarterSite.php');
 new StarterSite();
 
 /**
- * This enqueues all generated CSS and JS files
+ * This enqueues all generated CSS and JS files.
+ * In order to use get_body_class and enqueue files based on the current page,
+ * we need to run our enqueues after the global query object has been hydrated with data.
  */
-include('lib/EncoreEnqueuer.php');
-new EncoreEnqueuer();
+function setup_encore() {
+	include('lib/EncoreEnqueuer.php');
+	new EncoreEnqueuer(get_body_class());
+}
+add_action( 'wp', 'setup_encore');
