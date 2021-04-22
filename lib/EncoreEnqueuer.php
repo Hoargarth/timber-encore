@@ -44,7 +44,7 @@ class EncoreEnqueuer {
         foreach ($jsFiles as $jsFile ) {
             $scriptName = basename( $jsFile, '.js' );
 
-            wp_enqueue_style( $scriptName, $distFolder . $jsFile );
+            wp_enqueue_script( $scriptName, $distFolder . $jsFile );
         }
     }
 }
